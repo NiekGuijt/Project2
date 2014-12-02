@@ -14,11 +14,17 @@ public class containerHor extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }
-    
-    public containerHor()
-    {
-      
+        if (Greenfoot.mousePressed(this))
+            {
+        
+                    if (Greenfoot.isKeyDown("right"))
+                    {
+                        setLocation (getX() + 60, getY());
+                    }
+                    if (Greenfoot.isKeyDown("left"))
+                    {
+                        setLocation (getX() - 60, getY());
+                    }
+            }
     }
 }

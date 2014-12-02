@@ -14,6 +14,17 @@ public class containerHorK extends Actor
      */
     public void act() 
     {
-       
+       if (Greenfoot.mousePressed(this))
+            {
+        
+                    if (Greenfoot.isKeyDown("right"))
+                    {
+                        setLocation (getX() + 60, getY());
+                    }
+                    if (Greenfoot.isKeyDown("left"))
+                    {
+                        setLocation (getX() - 60, getY());
+                    }
+            }
     }    
 }

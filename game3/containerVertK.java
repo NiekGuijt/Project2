@@ -14,6 +14,17 @@ public class containerVertK extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
+        if (Greenfoot.mousePressed(this))
+            {
+        
+                    if (Greenfoot.isKeyDown("down"))
+                    {
+                        setLocation (getX(), getY() + 60);
+                    }
+                    if (Greenfoot.isKeyDown("up"))
+                    {
+                        setLocation (getX(), getY() - 60);
+                    }
+            }
     }    
 }
